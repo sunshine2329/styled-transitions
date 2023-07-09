@@ -1,0 +1,36 @@
+{
+  "name": "styled-transitions",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "scripts": {
+    "start": "remotion preview",
+    "build": "remotion render OneMergedVideo1 out/video1.mp4",
+    "build-one": "remotion render OneMergedVideo1 out/video.mp4 --log verbose --timeout 100000",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "build-test": "npx remotion render OneMergedVideo1 out/test_video1.mp4 --timeout 3600000 --concurrency=100% --crf=25 --audio-bitrade=128k --props=props.json"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.298.0",
+    "@aws-sdk/s3-request-presigner": "^3.299.0",
+    "@remotion/cli": "3.3.78",
+    "@remotion/media-utils": "^3.3.78",
+    "md5": "^2.3.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.26.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "3.3.78"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config": "3.3.78",
+    "@types/md5": "^2.3.2",
+    "@types/react": "^18.0.26",
+    "@types/web": "^0.0.86",
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "npm@8.19.2"
+}
